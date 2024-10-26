@@ -14,3 +14,14 @@ type Form = {
 };
 
 type Params = Omit<Form, 'errors'>;
+
+//* Консоль логи порибив що б не било помилку при деплої, прочитав що можна відключити налаштування "noUnusedLocals": false, ну наче як не рекомендовано
+
+const test: Params = {
+  email: 'string | null;',
+  firstName: 'string',
+  lastName: 'string | null;',
+  phone: 'string | null;',
+};
+
+console.log(test);

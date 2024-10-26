@@ -16,3 +16,7 @@ function compare<
     weight: bottom.weight,
   };
 }
+
+console.log(
+  compare({ name: 'Ts', color: 'red' }, { position: 10, weight: 100 })
+);
